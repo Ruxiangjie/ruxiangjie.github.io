@@ -1,0 +1,14 @@
+/* 封面图完整显示，可能会有留白 */
+.recent-post-item .post_cover_img {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #f5f5f5; /* 留白区域的背景色 */
+}
+
+.recent-post-item .post_cover_img .post-bg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;  /* 改为 contain，保证完整显示 */
+}
